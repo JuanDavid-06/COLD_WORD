@@ -24,6 +24,10 @@ nav a:hover{
   margin: 0 auto;
 }
 
+.card {
+  box-shadow: 0 0.01rem 0.1rem #000;
+}
+
 footer {
     background-color: #222;
     color: white;
@@ -57,7 +61,7 @@ footer {
     height: 5rem;
     position: fixed;
     right: 1rem;
-    bottom: 8rem;
+    bottom: 6.6rem;
     border-radius: 3rem;
     transition: box-shadow 0.3s ease;
   }
