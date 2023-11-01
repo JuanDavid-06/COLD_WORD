@@ -36,7 +36,7 @@
    <!--Container-->
 <div class="container-fluid">
     <!--Row 1-->
-
+   
     <div class="row p-4">
         <h2>Servicios</h2>
     </div>
@@ -49,6 +49,7 @@
               <h5 class="card-title">Servicio 1</h5>
               <p class="card-text">Descripción del servicio 1.</p>
           </div>
+           <a href="#m1" class="btn btn-primary" data-bs-toggle="modal">llenar formulario</a>
       </div>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
@@ -58,6 +59,7 @@
               <h5 class="card-title">Servicio 2</h5>
               <p class="card-text">Descripción del servicio 2.</p>
           </div>
+           <a href="#m1" class="btn btn-primary" data-bs-toggle="modal">llenar formulario</a>
       </div>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
@@ -67,6 +69,7 @@
               <h5 class="card-title">Servicio 3</h5>
               <p class="card-text">Descripción del servicio 3.</p>
           </div>
+           <a href="#m1" class="btn btn-primary" data-bs-toggle="modal">llenar formulario</a>
       </div>
   </div>
   <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3">
@@ -76,37 +79,44 @@
               <h5 class="card-title">Servicio 4</h5>
               <p class="card-text">Descripción del servicio 4.</p>
           </div>
+           <a href="#m1" class="btn btn-primary" data-bs-toggle="modal">llenar formulario</a>
       </div>
   </div>
 </div>
 
 </div>
-   <!-- modal de servicios -->
+ 
+
+    <!-- modal de servicios -->
 
    <div id="m1" class="modal" tabindex="-1">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title">Modal title</h5>
+          <h5 class="modal-title"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form id="contact-form">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br>
-    
-            <label for="descripcion">Descripción:</label>
-            <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br>
-    
-            <input type="submit" value="Enviar">
-        </form>
+          <div class="container">
+  <h1>Formulario de contacto</h1>
+  <form target="_blank" action="https://formsubmit.co/orlandoalvarez953@gmail.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
+         
         </div>
       </div>
     </div>
