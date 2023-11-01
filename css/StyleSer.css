@@ -18,6 +18,12 @@ nav a:hover{
     font-size: 1.5rem;
 }
 
+.tamaño {
+  width: 20rem;
+  height: 25rem;
+  margin: 0 auto;
+}
+
 footer {
     background-color: #222;
     color: white;
