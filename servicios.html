@@ -98,23 +98,32 @@
         </div>
         <div class="modal-body">
           <div class="container">
-  <h1>Formulario de contacto</h1>
-  <form target="_blank" action="https://formsubmit.co/juandavidsalgadoromero564@gmail.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
-      </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
-  </form>
+            <h1>Formulario de contacto</h1>
+            <form target="_blank" action="https://formsubmit.co/juandavidsalgadoromero564@gmail.com" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="name" class="form-control" placeholder="Full Name" required>
+                  </div>
+                  <div class="col">
+                    <label for="email-address">Email Address:</label>
+                    <input type="email" id="email-address" name="email" class="form-control" placeholder="Email Address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Enter a valid email address" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" class="form-control" placeholder="Your Address">
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+              <input type="hidden" name="_next" value="http://127.0.0.1:5500/COLD_WORD/servicios.html">
+              <input type="hidden" name="_subject" value="COLD WORLD!">
+            </form>            
 </div>
          
         </div>
@@ -139,26 +148,6 @@
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
-<script type="text/javascript">
-(function(){
-emailjs.init("05adF8Ih90sevdmhm");
-})();
-</script>
-  FBZzgJp9Pjtl2CfU9BV9I
- <script src="script.js">
-   document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
 
-    emailjs.sendForm('default_service', 'template_fwt5ckb', this)
-        .then(function(response) {
-            alert('¡El formulario ha sido enviado con éxito!');
-            document.getElementById("contact-form").reset();
-        }, function(error) {
-            alert('Hubo un error al enviar el formulario. Por favor, inténtalo de nuevo.');
-        });
-});
-  </script>
-   
- 
 </body>
 </html>
