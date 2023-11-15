@@ -83,3 +83,8 @@ footer {
   #icon-whatsapp:hover{
     filter: invert(96%) sepia(6%) saturate(2211%) hue-rotate(179deg) brightness(111%) contrast(91%);
   }
+
+  form {
+    background-color: #f8f8f9;
+    border-radius: 0.5rem;
+}
