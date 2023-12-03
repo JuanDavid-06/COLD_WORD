@@ -28,7 +28,7 @@ nav a:hover{
   box-shadow: 0 0.01rem 0.1rem #000;
 }
 
-footer {
+/* footer {
     background-color: #222;
     color: white;
     padding: 3rem;
@@ -40,7 +40,7 @@ footer {
   
   footer p {
     margin: 0;
-  }
+  } */
   
   footer a {
     text-decoration: none;
